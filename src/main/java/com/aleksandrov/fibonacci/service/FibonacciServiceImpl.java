@@ -1,4 +1,4 @@
-package com.aleksandrov.fibonacci.service.impl;
+package com.aleksandrov.fibonacci.service;
 
 import com.aleksandrov.fibonacci.domain.model.FibonacciRequest;
 import com.aleksandrov.fibonacci.service.FibonacciService;

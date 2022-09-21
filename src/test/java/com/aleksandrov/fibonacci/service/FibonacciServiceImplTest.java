@@ -1,7 +1,6 @@
-package com.aleksandrov.fibonacci.service.impl;
+package com.aleksandrov.fibonacci.service;
 
 import com.aleksandrov.fibonacci.domain.model.FibonacciRequest;
-import com.aleksandrov.fibonacci.service.FibonacciService;
 import com.google.common.cache.LoadingCache;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;

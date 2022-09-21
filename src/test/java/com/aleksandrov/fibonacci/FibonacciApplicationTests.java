@@ -1,23 +1,25 @@
 package com.aleksandrov.fibonacci;
 
-import com.aleksandrov.fibonacci.domain.model.FibonacciRequest;
-import com.aleksandrov.fibonacci.domain.model.RestResponse;
+import com.aleksandrov.fibonacci.controller.FibonacciController;
+import com.aleksandrov.fibonacci.service.FibonacciService;
 import org.junit.jupiter.api.Test;
-import org.junit.runner.RunWith;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.web.client.TestRestTemplate;
-import org.springframework.boot.test.web.server.LocalServerPort;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.ResponseEntity;
-import org.springframework.test.context.junit4.SpringRunner;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 @SpringBootTest
 class FibonacciApplicationTests {
 
+    @Autowired
+    private FibonacciController controller;
+    @Autowired
+    private FibonacciService fibonacciService;
+
     @Test
     void contextLoads() {
+        assertThat(controller).isNotNull();
+        assertThat(fibonacciService).isNotNull();
     }
 
 }
